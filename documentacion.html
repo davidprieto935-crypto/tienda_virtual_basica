@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documento de componentes frontend del proyecto TecnoFácil.">
+    <title>Documento de componentes frontend | TecnoFácil</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado no-imprimir">
+        <a class="marca" href="index.html"><img src="img/logo-tecnofacil.png" alt="Logotipo de TecnoFácil"></a>
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="productos.html">Productos</a>
+            <a class="activo" href="documentacion.html">Componentes</a>
+            <a href="listar_compras.php">Compras</a>
+        </nav>
+    </header>
+
+    <main class="documento-componentes">
+        <section class="portada-documento">
+            <div class="logos-portada">
+                <img class="logo-sena" src="img/logo-sena.png" alt="Logosímbolo del SENA">
+                <img class="logo-proyecto" src="img/logo-tecnofacil.png" alt="Logotipo de TecnoFácil">
+            </div>
+            <p>Servicio Nacional de Aprendizaje - SENA</p>
+            <h1>Documento de componentes frontend</h1>
+            <h2>Proyecto: tienda virtual básica TecnoFácil</h2>
+        </section>
+
+        <article class="contenido-documento">
+            <section>
+                <h2>1. Introducción</h2>
+                <p>
+                    El presente documento describe los componentes frontend definidos para TecnoFácil,
+                    una tienda virtual básica desarrollada como proyecto académico. La aplicación permite
+                    consultar productos tecnológicos, conocer el procedimiento de compra, seleccionar un
+                    artículo y registrar una operación. La interfaz se construye con HTML para la estructura,
+                    CSS para la presentación y JavaScript para las interacciones básicas.
+                </p>
+            </section>
+
+            <section>
+                <h2>2. Objetivo</h2>
+                <p>
+                    Definir la estructura y los componentes frontend necesarios para construir una tienda
+                    virtual sencilla, organizada, comprensible, usable y adaptable a computadores,
+                    tabletas y teléfonos móviles.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. Alcance del proyecto</h2>
+                <p>La primera versión de TecnoFácil permitirá:</p>
+                <ul>
+                    <li>Consultar un tutorial de compra organizado mediante enlaces internos.</li>
+                    <li>Mostrar productos con imagen, nombre, descripción, categoría y precio.</li>
+                    <li>Filtrar productos por categoría utilizando JavaScript.</li>
+                    <li>Seleccionar un producto y diligenciar los datos del comprador.</li>
+                    <li>Calcular el total según el precio y la cantidad.</li>
+                    <li>Guardar la compra mediante PHP y MySQL.</li>
+                    <li>Consultar las compras registradas.</li>
+                </ul>
+                <p>
+                    La aplicación no procesa pagos reales, no administra inventarios y no incluye un carrito
+                    con varios productos. Estas funciones quedan fuera del alcance para mantener un nivel básico.
+                </p>
+            </section>
+
+            <section>
+                <h2>4. Estructura de navegación</h2>
+                <div class="flujo-documento" aria-label="Flujo de navegación">
+                    <span>Inicio</span><b>→</b><span>Productos</span><b>→</b><span>Compra</span><b>→</b><span>Confirmación</span>
+                </div>
+                <p>
+                    El menú principal también permite ingresar directamente al tutorial, al documento de
+                    componentes y al listado de compras.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. Elementos HTML definidos</h2>
+                <div class="contenedor-tabla">
+                    <table>
+                        <thead><tr><th>Elemento</th><th>Uso dentro del proyecto</th></tr></thead>
+                        <tbody>
+                            <tr><td>&lt;header&gt;</td><td>Contiene el logotipo y el encabezado de cada página.</td></tr>
+                            <tr><td>&lt;nav&gt;</td><td>Organiza el menú de navegación principal y el índice del tutorial.</td></tr>
+                            <tr><td>&lt;main&gt;</td><td>Identifica el contenido principal de la página.</td></tr>
+                            <tr><td>&lt;section&gt;</td><td>Agrupa temas, productos y bloques relacionados.</td></tr>
+                            <tr><td>&lt;article&gt;</td><td>Representa cada tarjeta de producto y el contenido independiente.</td></tr>
+                            <tr><td>&lt;h1&gt; a &lt;h3&gt;</td><td>Establece una jerarquía clara de títulos.</td></tr>
+                            <tr><td>&lt;ol&gt; y &lt;ul&gt;</td><td>Presenta pasos ordenados y listas de características.</td></tr>
+                            <tr><td>&lt;a&gt;</td><td>Conecta páginas y permite desplazarse dentro del tutorial.</td></tr>
+                            <tr><td>&lt;img&gt;</td><td>Muestra el logotipo y las imágenes de productos.</td></tr>
+                            <tr><td>&lt;form&gt;</td><td>Reúne los datos necesarios para registrar la compra.</td></tr>
+                            <tr><td>&lt;input&gt;</td><td>Recibe nombre, documento, teléfono, correo y cantidad.</td></tr>
+                            <tr><td>&lt;button&gt;</td><td>Activa filtros, abre el menú y envía formularios.</td></tr>
+                            <tr><td>&lt;table&gt;</td><td>Presenta las compras guardadas en la base de datos.</td></tr>
+                            <tr><td>&lt;footer&gt;</td><td>Muestra información final y tecnologías utilizadas.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>6. Componentes CSS</h2>
+                <div class="contenedor-tabla">
+                    <table>
+                        <thead><tr><th>Componente</th><th>Aplicación</th></tr></thead>
+                        <tbody>
+                            <tr><td>Variables CSS</td><td>Centralizan colores, sombras, tamaños y bordes.</td></tr>
+                            <tr><td>Clases reutilizables</td><td>Aplican los mismos estilos a botones, tarjetas y títulos.</td></tr>
+                            <tr><td>Flexbox</td><td>Alinea el menú, botones y grupos de contenido.</td></tr>
+                            <tr><td>CSS Grid</td><td>Organiza productos y campos del formulario.</td></tr>
+                            <tr><td>:hover y :focus-visible</td><td>Muestran la interacción del mouse y del teclado.</td></tr>
+                            <tr><td>Media queries</td><td>Adaptan el diseño a pantallas pequeñas.</td></tr>
+                            <tr><td>@media print</td><td>Permite imprimir esta documentación sin el menú.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>7. Funcionalidades JavaScript</h2>
+                <div class="contenedor-tabla">
+                    <table>
+                        <thead><tr><th>Funcionalidad</th><th>Propósito</th></tr></thead>
+                        <tbody>
+                            <tr><td>Menú adaptable</td><td>Abre y cierra la navegación en pantallas pequeñas.</td></tr>
+                            <tr><td>Filtro de catálogo</td><td>Muestra productos según la categoría seleccionada.</td></tr>
+                            <tr><td>Cálculo del total</td><td>Multiplica el precio del producto por la cantidad.</td></tr>
+                            <tr><td>Validación previa</td><td>Comprueba campos antes de enviar el formulario.</td></tr>
+                            <tr><td>Confirmación</td><td>Solicita autorización antes de registrar la compra.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>8. Principios de usabilidad y accesibilidad</h2>
+                <ul>
+                    <li>Menú consistente en todas las páginas.</li>
+                    <li>Textos claros, breves y escritos en lenguaje sencillo.</li>
+                    <li>Contraste suficiente entre fondo, texto y botones.</li>
+                    <li>Campos acompañados de etiquetas visibles.</li>
+                    <li>Imágenes con texto alternativo.</li>
+                    <li>Foco visible para la navegación con teclado.</li>
+                    <li>Mensajes para estados vacíos, errores y confirmaciones.</li>
+                    <li>Diseño adaptable sin desplazamiento horizontal innecesario.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Relación con el backend</h2>
+                <p>
+                    PHP recibe los datos del formulario mediante POST, los valida y consulta el precio real
+                    del producto. Luego calcula el total y ejecuta una consulta preparada para guardar la compra.
+                    MySQL almacena los productos y las operaciones registradas.
+                </p>
+            </section>
+
+            <section>
+                <h2>10. Conclusión</h2>
+                <p>
+                    La estructura definida permite desarrollar una interfaz funcional sin utilizar librerías
+                    o frameworks. Cada tecnología tiene una responsabilidad específica y el proyecto puede
+                    ampliarse posteriormente con inventario, autenticación o un carrito de compras.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="pie-pagina no-imprimir">
+        <p><strong>TecnoFácil</strong> · Documento de componentes frontend</p>
+        <button class="boton secundario" type="button" onclick="window.print()">Imprimir o guardar como PDF</button>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

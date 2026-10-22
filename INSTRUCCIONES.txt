@@ -1,0 +1,99 @@
+PROYECTO: TIENDA VIRTUAL BÁSICA TECNOFÁCIL
+============================================================
+
+Este proyecto integra las evidencias:
+
+EV01 - Fundamentos frontend
+Abrir tutorial.html.
+
+EV02 - Documento de componentes
+Consultar documentacion.html o documentos/Documento_Componentes_Frontend.pdf.
+
+EV03 - Diseño frontend
+Abrir index.html, productos.html y comprar.php.
+
+Puede entregar este mismo archivo ZIP en los tres espacios de la
+plataforma. Cada evidencia se encuentra identificada dentro del proyecto.
+
+Antes de realizar la entrega, abra el archivo:
+
+   documentos\Documento_Componentes_Frontend.docx
+
+y complete en la portada el nombre del aprendiz, el instructor y la fecha.
+
+------------------------------------------------------------
+INSTRUCCIONES PARA EJECUTAR EL PROYECTO
+------------------------------------------------------------
+
+1. Copiar la carpeta tienda_virtual_basica dentro de:
+
+   C:\xampp\htdocs\
+
+2. Iniciar Apache y MySQL desde el panel de XAMPP.
+
+3. Abrir MySQL Workbench.
+
+4. Conectarse al servidor de XAMPP:
+
+   Host: 127.0.0.1
+   Puerto: 3307
+   Usuario: root
+
+5. Abrir y ejecutar base_datos.sql.
+
+6. Revisar conexion.php. La configuración incluida es:
+
+   Servidor: 127.0.0.1
+   Usuario: root
+   Contraseña: vacía
+   Base de datos: tienda_virtual_basica
+   Puerto: 3307
+
+7. Abrir el proyecto desde el navegador:
+
+   http://localhost/tienda_virtual_basica/
+
+No abra los archivos PHP haciendo doble clic. Deben ejecutarse mediante Apache.
+
+Si su instalación de MySQL utiliza el puerto 3306, cambie el valor 3307
+por 3306 tanto en MySQL Workbench como en conexion.php. Todas las
+herramientas deben apuntar al mismo puerto.
+
+------------------------------------------------------------
+FUNCIONAMIENTO
+------------------------------------------------------------
+
+- tutorial.html cumple la lista ordenada, enlaces internos, títulos,
+  imágenes, descripciones y estilos de la EV01.
+
+- documentacion.html y el PDF explican los componentes de la EV02.
+
+- Documento_Componentes_Frontend.docx permite completar y editar la
+  portada. La versión PDF facilita su lectura e impresión.
+
+- index.html, productos.html, comprar.php, estilos.css y funciones.js
+  forman la implementación frontend de la EV03.
+
+- guardar_compra.php registra una compra en MySQL.
+
+- listar_compras.php consulta las compras guardadas.
+
+Proyecto académico: no procesa pagos reales.
+
+------------------------------------------------------------
+ARCHIVOS PRINCIPALES
+------------------------------------------------------------
+
+index.html                         Página de inicio.
+tutorial.html                      Tutorial solicitado en la EV01.
+productos.html                     Catálogo y filtros con JavaScript.
+comprar.php                        Formulario de compra.
+guardar_compra.php                 Validación y registro en MySQL.
+confirmacion.php                   Resumen de la operación registrada.
+listar_compras.php                 Consulta de compras.
+documentacion.html                 Documento web de componentes.
+documentos\*.docx y *.pdf          Documento formal de la EV02.
+css\estilos.css                    Presentación visual adaptable.
+js\funciones.js                    Menú, filtros, cálculo y validación.
+img\                               Logos e imágenes del proyecto.
+base_datos.sql                     Base, tablas y productos iniciales.

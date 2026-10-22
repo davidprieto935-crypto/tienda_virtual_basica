@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos de TecnoFácil.">
+    <title>TecnoFácil | Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html"><img src="img/logo-tecnofacil.png" alt="Logotipo de TecnoFácil"></a>
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a class="activo" href="productos.html">Productos</a>
+            <a href="documentacion.html">Componentes</a>
+            <a href="listar_compras.php">Compras</a>
+        </nav>
+    </header>
+
+    <main class="seccion pagina-catalogo">
+        <header class="cabecera-pagina">
+            <p class="etiqueta">Catálogo</p>
+            <h1>Seleccione un producto</h1>
+            <p>Utilice los filtros para organizar el catálogo por categoría.</p>
+        </header>
+
+        <div class="filtros" aria-label="Filtros de productos">
+            <button class="filtro activo" type="button" data-filtro="todos">Todos</button>
+            <button class="filtro" type="button" data-filtro="accesorios">Accesorios</button>
+            <button class="filtro" type="button" data-filtro="audio">Audio</button>
+            <button class="filtro" type="button" data-filtro="video">Video</button>
+        </div>
+
+        <p id="resultado-filtro" class="estado-catalogo" aria-live="polite">Se muestran 4 productos.</p>
+
+        <div class="rejilla-productos" id="catalogo">
+            <article class="tarjeta-producto" data-categoria="accesorios">
+                <img src="img/teclado.png" alt="Teclado inalámbrico compacto">
+                <div class="contenido-tarjeta">
+                    <p class="categoria">Accesorios</p>
+                    <h2>Teclado inalámbrico</h2>
+                    <p>Teclado compacto con conexión estable y distribución en español.</p>
+                    <ul class="caracteristicas">
+                        <li>Conexión inalámbrica</li>
+                        <li>Diseño compacto</li>
+                    </ul>
+                    <p class="precio">$85.000</p>
+                    <a class="boton primario ancho" href="comprar.php?producto=1">Comprar</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto" data-categoria="audio">
+                <img src="img/audifonos.png" alt="Audífonos inalámbricos de diadema">
+                <div class="contenido-tarjeta">
+                    <p class="categoria">Audio</p>
+                    <h2>Audífonos inalámbricos</h2>
+                    <p>Audio cómodo para clases virtuales, música y videollamadas.</p>
+                    <ul class="caracteristicas">
+                        <li>Micrófono integrado</li>
+                        <li>Almohadillas cómodas</li>
+                    </ul>
+                    <p class="precio">$120.000</p>
+                    <a class="boton primario ancho" href="comprar.php?producto=2">Comprar</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto" data-categoria="video">
+                <img src="img/camara.png" alt="Cámara web de alta definición">
+                <div class="contenido-tarjeta">
+                    <p class="categoria">Video</p>
+                    <h2>Cámara web HD</h2>
+                    <p>Cámara compacta para reuniones, tutorías y clases virtuales.</p>
+                    <ul class="caracteristicas">
+                        <li>Resolución HD</li>
+                        <li>Micrófono incorporado</li>
+                    </ul>
+                    <p class="precio">$95.000</p>
+                    <a class="boton primario ancho" href="comprar.php?producto=3">Comprar</a>
+                </div>
+            </article>
+
+            <article class="tarjeta-producto" data-categoria="accesorios">
+                <img src="img/mouse.png" alt="Mouse inalámbrico ergonómico">
+                <div class="contenido-tarjeta">
+                    <p class="categoria">Accesorios</p>
+                    <h2>Mouse inalámbrico</h2>
+                    <p>Control preciso y diseño ergonómico para uso diario.</p>
+                    <ul class="caracteristicas">
+                        <li>Conexión USB</li>
+                        <li>Diseño ergonómico</li>
+                    </ul>
+                    <p class="precio">$48.000</p>
+                    <a class="boton primario ancho" href="comprar.php?producto=4">Comprar</a>
+                </div>
+            </article>
+        </div>
+
+        <div id="sin-resultados" class="sin-resultados" hidden>
+            No existen productos para la categoría seleccionada.
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>TecnoFácil</strong> · Catálogo educativo</p>
+        <p>Los precios se utilizan solamente con fines académicos.</p>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

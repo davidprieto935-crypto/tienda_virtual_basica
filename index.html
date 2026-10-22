@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda tecnológica educativa desarrollada con HTML, CSS, JavaScript, PHP y MySQL.">
+    <title>TecnoFácil | Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="Ir al inicio de TecnoFácil">
+            <img src="img/logo-tecnofacil.png" alt="Logotipo de TecnoFácil">
+        </a>
+
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+            Menú
+        </button>
+
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <a class="activo" href="index.html">Inicio</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="productos.html">Productos</a>
+            <a href="documentacion.html">Componentes</a>
+            <a href="listar_compras.php">Compras</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="presentacion">
+            <div>
+                <p class="etiqueta">Proyecto formativo frontend</p>
+                <h1>Tecnología útil, compra sencilla</h1>
+                <p>
+                    TecnoFácil es una tienda educativa donde puede consultar productos,
+                    conocer el proceso de compra y registrar una solicitud de manera clara.
+                </p>
+                <div class="grupo-botones">
+                    <a class="boton primario" href="productos.html">Ver productos</a>
+                    <a class="boton secundario" href="tutorial.html">Leer el tutorial</a>
+                </div>
+            </div>
+            <img class="imagen-presentacion" src="img/teclado.png" alt="Teclado inalámbrico disponible en TecnoFácil">
+        </section>
+
+        <section class="seccion" aria-labelledby="titulo-destacados">
+            <div class="titulo-seccion">
+                <div>
+                    <p class="etiqueta">Selección inicial</p>
+                    <h2 id="titulo-destacados">Productos destacados</h2>
+                </div>
+                <a class="enlace-texto" href="productos.html">Consultar catálogo completo →</a>
+            </div>
+
+            <div class="rejilla-productos">
+                <article class="tarjeta-producto">
+                    <img src="img/teclado.png" alt="Teclado inalámbrico compacto">
+                    <div class="contenido-tarjeta">
+                        <p class="categoria">Accesorios</p>
+                        <h3>Teclado inalámbrico</h3>
+                        <p>Diseño compacto y conexión estable para estudiar o trabajar.</p>
+                        <p class="precio">$85.000</p>
+                        <a class="boton primario ancho" href="comprar.php?producto=1">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/audifonos.png" alt="Audífonos inalámbricos de diadema">
+                    <div class="contenido-tarjeta">
+                        <p class="categoria">Audio</p>
+                        <h3>Audífonos inalámbricos</h3>
+                        <p>Sonido cómodo para clases virtuales y actividades multimedia.</p>
+                        <p class="precio">$120.000</p>
+                        <a class="boton primario ancho" href="comprar.php?producto=2">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="img/camara.png" alt="Cámara web para computador">
+                    <div class="contenido-tarjeta">
+                        <p class="categoria">Video</p>
+                        <h3>Cámara web HD</h3>
+                        <p>Imagen clara para reuniones, tutorías y videollamadas.</p>
+                        <p class="precio">$95.000</p>
+                        <a class="boton primario ancho" href="comprar.php?producto=3">Comprar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="franja-informativa" aria-labelledby="titulo-proceso">
+            <p class="etiqueta">Proceso simple</p>
+            <h2 id="titulo-proceso">Comprar requiere solamente tres pasos</h2>
+            <ol class="pasos-resumidos">
+                <li><strong>Explore:</strong> consulte las características y el precio.</li>
+                <li><strong>Seleccione:</strong> elija el producto que necesita.</li>
+                <li><strong>Confirme:</strong> complete sus datos y registre la compra.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>TecnoFácil</strong> · Proyecto educativo de desarrollo frontend</p>
+        <p>HTML · CSS · JavaScript · PHP · MySQL</p>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+</body>
+</html>

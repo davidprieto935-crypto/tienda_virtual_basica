@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial paso a paso para comprar en TecnoFácil.">
+    <title>TecnoFácil | Tutorial de compra</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html"><img src="img/logo-tecnofacil.png" alt="Logotipo de TecnoFácil"></a>
+        <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+        <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a class="activo" href="tutorial.html">Tutorial</a>
+            <a href="productos.html">Productos</a>
+            <a href="documentacion.html">Componentes</a>
+            <a href="listar_compras.php">Compras</a>
+        </nav>
+    </header>
+
+    <main id="inicio" class="contenedor-documento">
+        <header class="cabecera-pagina">
+            <p class="etiqueta">Evidencia GA6-220501096-AA4-EV01</p>
+            <h1>Tutorial para comprar en TecnoFácil</h1>
+            <p>
+                En este tutorial aprenderá a consultar el catálogo, seleccionar un producto,
+                completar el formulario, revisar el total y confirmar la compra.
+            </p>
+        </header>
+
+        <nav class="indice-tutorial" aria-labelledby="titulo-indice">
+            <h2 id="titulo-indice">Contenido del tutorial</h2>
+            <ol>
+                <li><a href="#consultar">Consultar los productos</a></li>
+                <li><a href="#seleccionar">Seleccionar un producto</a></li>
+                <li><a href="#datos">Ingresar los datos del comprador</a></li>
+                <li><a href="#total">Calcular y revisar el total</a></li>
+                <li><a href="#confirmar">Confirmar la compra</a></li>
+            </ol>
+        </nav>
+
+        <section id="consultar" class="tema-tutorial">
+            <div class="numero-tema">1</div>
+            <div class="texto-tema">
+                <h2>Consultar los productos</h2>
+                <p>
+                    Abra la página <strong>Productos</strong>. Allí encontrará tarjetas con la imagen,
+                    el nombre, la categoría, la descripción y el precio de cada artículo.
+                    Puede utilizar los botones de categoría para mostrar solamente los productos que le interesan.
+                </p>
+                <a class="enlace-volver" href="#inicio">↑ Volver al contenido</a>
+            </div>
+            <img src="img/teclado.png" alt="Ejemplo de producto que aparece en el catálogo">
+        </section>
+
+        <section id="seleccionar" class="tema-tutorial">
+            <div class="numero-tema">2</div>
+            <div class="texto-tema">
+                <h2>Seleccionar un producto</h2>
+                <p>
+                    Revise la descripción y el precio. Cuando encuentre el producto que desea,
+                    presione el botón <strong>Comprar</strong>. La aplicación abrirá un formulario
+                    con el producto seleccionado.
+                </p>
+                <a class="enlace-volver" href="#inicio">↑ Volver al contenido</a>
+            </div>
+            <img src="img/audifonos.png" alt="Audífonos inalámbricos para seleccionar en el catálogo">
+        </section>
+
+        <section id="datos" class="tema-tutorial">
+            <div class="numero-tema">3</div>
+            <div class="texto-tema">
+                <h2>Ingresar los datos del comprador</h2>
+                <p>
+                    Escriba su nombre, documento, correo y teléfono. Los campos marcados como
+                    obligatorios deben completarse. El correo debe tener un formato válido,
+                    por ejemplo: <strong>aprendiz@correo.com</strong>.
+                </p>
+                <a class="enlace-volver" href="#inicio">↑ Volver al contenido</a>
+            </div>
+            <div class="mini-formulario" aria-label="Representación de un formulario">
+                <span>Nombre completo</span>
+                <span>Documento</span>
+                <span>Correo electrónico</span>
+                <span>Teléfono</span>
+            </div>
+        </section>
+
+        <section id="total" class="tema-tutorial">
+            <div class="numero-tema">4</div>
+            <div class="texto-tema">
+                <h2>Calcular y revisar el total</h2>
+                <p>
+                    Seleccione una cantidad mayor que cero. JavaScript multiplicará automáticamente
+                    el precio por la cantidad. Antes de continuar, compruebe que el producto,
+                    la cantidad y el total sean correctos.
+                </p>
+                <p class="formula">Total = precio × cantidad</p>
+                <a class="enlace-volver" href="#inicio">↑ Volver al contenido</a>
+            </div>
+            <img src="img/mouse.png" alt="Mouse inalámbrico utilizado como ejemplo de compra">
+        </section>
+
+        <section id="confirmar" class="tema-tutorial">
+            <div class="numero-tema">5</div>
+            <div class="texto-tema">
+                <h2>Confirmar la compra</h2>
+                <p>
+                    Presione <strong>Registrar compra</strong>. La aplicación solicitará confirmación.
+                    Al aceptar, PHP validará nuevamente los datos y guardará la compra en MySQL.
+                    Finalmente se mostrará el número de registro y el resumen de la operación.
+                </p>
+                <a class="enlace-volver" href="#inicio">↑ Volver al contenido</a>
+            </div>
+            <div class="mensaje-ejemplo" role="img" aria-label="Ejemplo de mensaje de confirmación">
+                <strong>Compra registrada</strong>
+                <span>La información fue guardada correctamente.</span>
+            </div>
+        </section>
+
+        <aside class="nota">
+            <strong>Recuerde:</strong> este proyecto es una práctica académica. No procesa pagos reales
+            ni solicita información bancaria.
+        </aside>
+    </main>
+
+    <footer class="pie-pagina">
+        <p><strong>TecnoFácil</strong> · Tutorial elaborado con HTML y CSS</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
